@@ -1,0 +1,963 @@
+<section class="catalog">
+	<h2 class="visually-hidden">Каталог</h2>
+	<div class="catalog__wrapper container--flex">
+		<div class="catalog__left left" id="menu">
+			<button class="btn header__close" id="#close">
+				<svg width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="2.63623" width="37.2838" height="3.72838" transform="rotate(45 2.63623 0)" fill="black">
+					</rect>
+					<rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="black">
+					</rect>
+				</svg>
+			</button>
+			<div class="left__parameters">
+				<h3 class="left__parameters-name name">Выбор по параметрам:</h3>
+				<div class="line"></div>
+				<div class="left__parameters__price">
+					<p class="left__parameters-price-name name">Цена</p>
+					<div class="left__parameters-element" id="range-slider"></div>
+					<form class="left__parameters-form left-form">
+						<label class="left-form-label" tabindex="0">
+							<input type="number" class="left__parameters-form-input input-noui" id="input-0">
+							<span class="left-form-text">₽</span>
+						</label>
+						<div class="left-form-degree" tabindex="-1"></div>
+						<label class="left-form-label" tabindex="0">
+							<input type="number" class="left__parameters-form-input input-noui" id="input-1">
+							<span class="left-form-text">₽</span>
+						</label>
+					</form>
+				</div>
+
+				<div class="left__parameters__square">
+					<p class="left__parameters-square-name name">Площадь помещения:</p>
+					<div class="left__parameters-element" id="range-slider-square"></div>
+					<form class="left__parameters-form left-form">
+						<label class="left-form-label" tabindex="0">
+							<input type="number" class="left__parameters-form-input input-noui" id="input-2">
+							<span class="left-form-text">м2</span>
+						</label>
+						<div class="left-form-degree" tabindex="-1"></div>
+						<label class="left-form-label" tabindex="0">
+							<input type="number" class="left__parameters-form-input input-noui" id="input-3">
+							<span class="left-form-text">м2</span>
+						</label>
+					</form>
+				</div>
+			</div>
+			<div class="left__manufacturer">
+				<p class="left__manufacturer-name name">Производитель</p>
+				<div class="left__manufacturer-search" tabindex="0">
+					<input id="search" type="search" placeholder="Поиск" class="left__manufacturer-search-input">
+					<button class="btn left__manufacturer-search-input-btn">
+						<svg>
+							<use xlink:href="img/sprite.svg#search"></use>
+						</svg>
+					</button>
+				</div>
+				<ul class="left__manufacturer-list">
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">ABASK (4)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">ALC (2)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Aeronic (14)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Bosh (4)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Candy (7)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Centec (11)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Candy (7)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Centec (11)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Centec (11)</span>
+						</label>
+					</li>
+					<li class="left__manufacturer-item">
+						<label class="left__manufacturer-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Centec (11)</span>
+						</label>
+					</li>
+				</ul>
+				<div class="line"></div>
+
+			</div>
+
+
+
+			<div class="left__options">
+				<p class="left__options-name name">Дополнительные опции</p>
+				<ul class="left__options-list">
+					<li class="left__options-item">
+						<label class="left__options-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Ионизация (46)</span>
+						</label>
+					</li>
+					<li class="left__options-item">
+						<label class="left__options-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Климат контроль (22)</span>
+						</label>
+					</li>
+					<li class="left__options-item">
+						<label class="left__options-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Турбо (144)</span>
+						</label>
+					</li>
+					<li class="left__options-item">
+						<label class="left__options-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Эко (4)</span>
+						</label>
+					</li>
+					<li class="left__options-item">
+						<label class="left__options-label">
+							<input class="checkbox" type="checkbox">
+							<span class="checkstyle"></span>
+							<span class="check-text">Wi Fi модуль (70)</span>
+						</label>
+					</li>
+				</ul>
+				<div class="line"></div>
+			</div>
+
+			<div class="left__power">
+				<p class="left__power-name name">Мощность охлаждения:</p>
+				<div class="left__power-element" id="range-slider-power"></div>
+				<form class="left__power-form left-form">
+					<label class="left-form-label" tabindex="0">
+						<input type="number" class="left__parameters-form-input input-noui" id="input-4">
+						<span class="left-form-text">м2</span>
+					</label>
+					<div class="left-form-degree" tabindex="-1"></div>
+					<label class="left-form-label" tabindex="0">
+						<input type="number" class="left__parameters-form-input input-noui" id="input-5">
+						<span class="left-form-text">м2</span>
+					</label>
+				</form>
+				<div class="line line--light"></div>
+
+			</div>
+
+			<div class="left__noise">
+				<p class="left__noise-name name">Уровень шума:</p>
+				<div class="left__noise-element" id="range-slider-noise"></div>
+				<form class="left__noise-form left-form">
+					<label class="left-form-label" tabindex="0">
+						<input type="number" class="left__parameters-form-input input-noui" id="input-6">
+						<span class="left-form-text">dB</span>
+					</label>
+					<div class="left-form-degree" tabindex="-1"></div>
+					<label class="left-form-label" tabindex="0">
+						<input type="number" class="left__parameters-form-input input-noui" id="input-7">
+						<span class="left-form-text">dB</span>
+					</label>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="catalog__right right">
+			<div class="right__buttonset">
+				<button class="right__buttonset-btn btn">
+					<img src="img/catalog/condi.png" alt="изображение кондиционера">
+					<span>Кондиционеры</span>
+				</button>
+				<button class="right__buttonset-btn btn">
+					<img src="img/catalog/system.png" alt="изображение системы вентиляции">
+					<span>Системы вентиляции</span>
+				</button>
+			</div>
+			<ul class="right__list">
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Кондиционеры</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Сплит-системы</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Сплит-системы</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Вентиляция</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Инверторные</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Дизайнерские</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">С Wi Fi</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Сплит-системы</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Инверторные</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">С Wi Fi</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">На 2 комнаты</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">На 3 комнаты</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">На 4 комнаты</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">На 5 комнат</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Для кухни ресторана</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn btn--active">Для производства</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Дизайнерские</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">С Wi Fi</button>
+				</li>
+				<li class="right__list-item">
+					<button class="right__list-item-btn btn">Сплит-системы</button>
+				</li>
+			</ul>
+
+			<div class="right__select">
+				<span class="right__select-name name">Сортировка:</span>
+				<select name="select" aria-label="сортировка">
+					<option value="">По возрастанию цены</option>
+					<option value="">По убыванию цены</option>
+				</select>
+			</div>
+
+			<ul class="right__products">
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/1.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">19420 ₽</p>
+								<p class="card-price-actual">18240 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card card--booking">
+						<img src="img/catalog/card/2.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link card-link--booking">Настольный мини-кондиционер Antarctic Air</a>
+						<ul class="card-list card-list--booking">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-actual">22640 ₽</p>
+							</div>
+							<div class="card-presence--booking">
+								<img src="img/catalog/card/x.png">
+								<span class="card-presence-text">Под заказ</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/3.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">14650 ₽</p>
+								<p class="card-price-actual">14000 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/3.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">14650 ₽</p>
+								<p class="card-price-actual">14000 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/1.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">19420 ₽</p>
+								<p class="card-price-actual">18240 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card card--booking">
+						<img src="img/catalog/card/2.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link card-link--booking">Настольный мини-кондиционер Antarctic Air</a>
+						<ul class="card-list card-list--booking">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-actual">22640 ₽</p>
+							</div>
+							<div class="card-presence--booking">
+								<img src="img/catalog/card/x.png">
+								<span class="card-presence-text">Под заказ</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/1.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">19420 ₽</p>
+								<p class="card-price-actual">18240 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card card--booking">
+						<img src="img/catalog/card/2.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link card-link--booking">Настольный мини-кондиционер Antarctic Air</a>
+						<ul class="card-list card-list--booking">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-actual">22640 ₽</p>
+							</div>
+							<div class="card-presence--booking">
+								<img src="img/catalog/card/x.png">
+								<span class="card-presence-text">Под заказ</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/3.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">14650 ₽</p>
+								<p class="card-price-actual">14000 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/3.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">14650 ₽</p>
+								<p class="card-price-actual">14000 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card">
+						<img src="img/catalog/card/1.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link">Кондиционер Ballu RC-TVS121-42</a>
+						<ul class="card-list">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-old">19420 ₽</p>
+								<p class="card-price-actual">18240 ₽</p>
+							</div>
+							<div class="card-presence">
+								<img src="img/catalog/card/check.png">
+								<span class="card-presence-text">Есть в наличии</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+				<li class="right__products-item">
+					<article class="right__products-item-card card card--booking">
+						<img src="img/catalog/card/2.png" class="card-img" alt="изображение товара">
+						<a href="#" class="card-link card-link--booking">Настольный мини-кондиционер Antarctic Air</a>
+						<ul class="card-list card-list--booking">
+							<li class="card-list-item">
+								<span class="card-list-item-left">Инвертор:</span>
+								<span class="card-list-item-right">Да</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность охлаждения:</span>
+								<span class="card-list-item-right">2200 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Мощность обогрева:</span>
+								<span class="card-list-item-right">2640 Вт</span>
+							</li>
+							<li class="card-list-item">
+								<span class="card-list-item-left">Площадь помещения:</span>
+								<span class="card-list-item-right">до 26 м2</span>
+							</li>
+						</ul>
+						<div class="card-price-presence">
+							<div class="card-price">
+								<p class="card-price-actual">22640 ₽</p>
+							</div>
+							<div class="card-presence--booking">
+								<img src="img/catalog/card/x.png">
+								<span class="card-presence-text">Под заказ</span>
+							</div>
+						</div>
+						<div class="card-buttonset">
+							<button class="card-buttonset-btn btn-general btn--big btn">
+								В корзину
+								<svg>
+									<use xlink:href="img/sprite.svg#basket"></use>
+								</svg>
+							</button>
+							<div>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#skils"></use>
+									</svg>
+								</button>
+								<button class="card-buttonset-btn btn-general btn">
+									<svg>
+										<use xlink:href="img/sprite.svg#heart"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+
+					</article>
+				</li>
+			</ul>
+
+			<button class="btn products__btn btn--blue">Больше товаров</button>
+
+
+			<form class="right__form">
+				<input type="search" placeholder="Начните вводить текст" class="right__form-input">
+				<button class="right__form-btn btn btn--blue">Найти</button>
+			</form>
+		</div>
+
+
+	</div>
+</section>

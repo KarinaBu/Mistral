@@ -1,0 +1,48 @@
+.footer {
+	&__container {
+		padding-top: 40px;
+		padding-left: 30px;
+		padding-bottom: 37px;
+		background-color: $background;
+
+		&-copywrite {
+			display: inline-block;
+			margin-bottom: 30px;
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			font-weight: 350;
+			font-size: 18px;
+		}
+
+		&-list {
+			display: flex;
+
+			@include mobile {
+				flex-direction: column;
+			}
+
+			&-item {
+				letter-spacing: 0.04em;
+				text-decoration-line: underline;
+				font-weight: 350;
+				font-size: 14px;
+				line-height: 16px;
+				color: $blue;
+				transition: color .3s ease;
+
+				&:not(:last-child) {
+					margin-right: 57px;
+
+					@include mobile {
+						margin-right: 0;
+						margin-bottom: 10px;
+					}
+				}
+
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+	}
+}

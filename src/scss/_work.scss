@@ -1,0 +1,137 @@
+.work {
+	&__right {
+		position: relative;
+		padding-top: 44px;
+
+		@include tablet {
+			padding-top: 10px;
+		}
+
+		&-open {
+			margin-bottom: 44px;
+		}
+	}
+
+	&__swiper {
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	top: 105.8%;
+	width: 34px;
+	height: 34px;
+	border-radius: 100px;
+	background-color: $white;
+
+	@include mobile {
+		background-color: transparent;
+	}
+
+	& svg {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+.swiper-button-prev svg {
+	transform: rotate(180deg);
+
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+	content: "";
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+	content: "";
+}
+
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	top: 105%;
+}
+
+.swiper-pagination-bullet {
+	display: flex;
+	width: 20.52vw;
+	background: transparent;
+	border-radius: 2px;
+	opacity: 1;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0px;
+
+	&:focus {
+		outline: none;
+		background: $blue;
+		height: 1px;
+		opacity: 1;
+		z-index: 1000;
+	}
+
+	&:not(:last-child) {
+		margin-right: 30px;
+
+		@include big-desktop {
+			margin-right: 15px;
+		}
+	}
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	@include big-desktop {
+		left: 50%;
+		width: 10vw;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.swiper-pagination-bullet-active {
+	.work-bar {
+		&::after {
+			transform: scaleX(1);
+		}
+	}
+}
+
+.work-bar {
+	position: relative;
+	overflow: hidden;
+	width: 394px;
+	height: 1px;
+	border-radius: 2px;
+	background: #E3E4E6;
+
+	@include big-desktop {
+		width: 10vw;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #1D1700;
+		transform-origin: left;
+		transform: scaleX(0);
+		transition: transform .3s ease;
+	}
+}

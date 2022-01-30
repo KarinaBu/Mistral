@@ -1,0 +1,158 @@
+.advantage {
+	padding-top: 102px;
+	padding-bottom: 50px;
+
+	@include tablet {
+		padding-top: 30px;
+	}
+
+	@include mobile {
+		padding-bottom: 10px;
+	}
+
+	&__open {
+		margin-bottom: 39px;
+	}
+
+	&__block {
+		display: flex;
+		justify-content: space-between;
+
+		@include middle-desktop {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		padding-right: 20px;
+
+		@include middle-desktop {
+			padding-right: 0;
+		}
+
+		&-list {
+
+			@include middle-desktop {
+				display: flex;
+				margin-bottom: 20px;
+			}
+
+			@include mobile {
+				flex-direction: column;
+			}
+
+			&-item {
+				display: flex;
+				width: 21.875vw;
+				padding: 25px 50px;
+				padding-right: 15px;
+				height: 101px;
+				align-items: center;
+				letter-spacing: 0.04em;
+				font-weight: 350;
+				font-size: 18px;
+				background: $background;
+
+				@include mini-desktop {
+					flex-direction: column;
+					text-align: center;
+					padding: 10px;
+					height: initial;
+					font-size: 14px;
+				}
+
+				@include tablet {
+					width: auto;
+					margin: auto;
+				}
+
+				@include mobile {
+					width: 100%;
+				}
+
+				&:not(:last-child) {
+					margin-bottom: 42px;
+
+					@include big-desktop {
+						margin-bottom: 20px;
+					}
+
+					@include middle-desktop {
+						margin-bottom: 0px;
+						margin-right: 15px;
+					}
+
+					@include mobile {
+						margin-bottom: 10px;
+					}
+				}
+
+				&:first-child img {
+					margin-right: 30px;
+
+					@include mini-desktop {
+						margin-right: 0;
+					}
+				}
+
+				& img {
+					margin-right: 16px;
+					vertical-align: middle;
+
+					@include mini-desktop {
+						margin-right: 0;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	&__right {
+
+		&-banner {
+			position: relative;
+
+			@include mobile {
+				display: none;
+			}
+
+			& img {
+				@include middle-desktop {
+					width: 100%;
+				}
+			}
+		}
+
+		&-title {
+			position: absolute;
+			z-index: 1000;
+			top: 35%;
+			right: 2%;
+			width: 20.677vw;
+			line-height: 140%;
+			letter-spacing: 0.02em;
+			font-weight: 500;
+			font-size: 36px;
+			color: $blue;
+
+			@include big-desktop {
+				left: 50%;
+				font-size: 25px;
+			}
+
+			@include middle-desktop {
+				right: 0;
+				font-size: 36px;
+			}
+
+			@include mini-desktop {
+				font-size: 24px;
+			}
+
+			@include tablet {
+				font-size: 18px;
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+//базовые подключения
+
+@import "fonts";
+@import "vars";
+@import "mixins/mini";
+@import "mixins/breakpoint";
+@import "all";
+@import "conditions";
+
+// подключения компонентов страницы
+@import "header";
+@import "catalog";
+@import "card";
+@import "advantage";
+@import "work";
+@import "reputation";
+@import "scheme";
+@import "news";
+@import "discount";
+@import "contacts";
+@import "footer";
+
+
+

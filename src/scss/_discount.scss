@@ -1,0 +1,141 @@
+.discount {
+	padding-top: 219px;
+	padding-bottom: 50px;
+
+	@include desktop {
+		padding-top: 20px;
+	}
+
+	&__container {
+		position: relative;
+		padding-top: 65px;
+		padding-bottom: 70px;
+		padding-left: 65px;
+		padding-right: 67px;
+		background-color: $background;
+
+		@include mobile {
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			padding-right: 15px;
+			width: 317px;
+			height: 592px;
+			background-image: url(../img/form/men.png);
+			background-position: top left 30px;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			@include desktop {
+				display: none;
+			}
+		}
+
+		&-content {
+			width: 60%;
+			margin-left: auto;
+
+			@include desktop {
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
+
+
+			&-name {
+				margin-bottom: 4px;
+				line-height: 30px;
+				letter-spacing: 0.04em;
+				font-weight: 500;
+				font-size: 24px;
+
+				@include mobile {
+					font-size: 20px;
+				}
+			}
+
+			&-descr {
+				margin-bottom: 27px;
+				line-height: 45px;
+				letter-spacing: 0.04em;
+				font-weight: 500;
+				font-size: 36px;
+				color: $blue;
+
+				@include mobile {
+					line-height: initial;
+					font-size: 20px;
+				}
+
+				& span {
+					font-size: 23px;
+
+					@include mobile {
+						font-size: 20px;
+					}
+
+				}
+			}
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			@include desktop {
+				align-items: center;
+			}
+
+			label {
+				position: relative;
+				max-width: 420px;
+				width: 100%;
+				margin-bottom: 27px;
+			}
+
+			&-field {
+				padding: 0 30px;
+				max-width: 420px;
+				height: 54px;
+				width: 100%;
+				background-color: $white;
+
+				&::placeholder {
+					line-height: 21px;
+					letter-spacing: 0.04em;
+					font-weight: 350;
+					font-size: 18px;
+				}
+			}
+
+			&-btn {
+				padding: 18px 40px;
+				line-height: 22px;
+				letter-spacing: 0.04em;
+				font-weight: 500;
+				font-size: 18px;
+				color: $white;
+
+				&:hover {
+					color: $blue;
+					background-color: $gray;
+				}
+			}
+		}
+	}
+}
+
+.js-validate-error-label {
+	position: absolute;
+	bottom: -24px;
+	left: 24px;
+	line-height: 1;
+}

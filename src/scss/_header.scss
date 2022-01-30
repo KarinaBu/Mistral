@@ -1,0 +1,223 @@
+.header {
+	padding-top: 50px;
+	padding-bottom: 40px;
+
+	@include middle-desktop {
+		display: none;
+	}
+
+	&__container {
+		justify-content: space-between;
+	}
+
+	&__logo {
+		margin-right: 90px;
+
+		@include tablet {
+			margin-right: 0;
+		}
+
+		@include small-tablet {
+			display: none;
+		}
+
+		@include mobile {
+			display: initial;
+		}
+	}
+
+	&__nav {
+		padding-top: 11px;
+
+		&-list {
+			display: flex;
+
+			@include mobile {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			&-item {
+				line-height: 25px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 20px;
+
+				@include big-desktop {
+					font-size: 15px;
+				}
+
+				@include tablet {
+					font-size: 12px;
+				}
+
+				&:first-child {
+					color: $blue;
+				}
+
+				&:not(:last-child) {
+					margin-right: 29px;
+
+					@include small-tablet {
+						margin-right: 10px;
+					}
+				}
+
+				&:nth-child(2),
+				&:nth-child(3) {
+					margin-right: 40px;
+
+					@include small-tablet {
+						margin-right: 10px;
+					}
+				}
+			}
+
+			& svg {
+				margin-right: 3px;
+				width: 14px;
+				height: 13px;
+
+				@include small-tablet {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__buttonset {
+		margin-left: auto;
+
+		@include mobile {
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		.header__btn {
+			position: relative;
+		}
+
+		.header__btn:nth-child(4)::after {
+			content: '';
+			position: absolute;
+			z-index: 1000;
+			top: -11px;
+			right: -7px;
+			width: 21px;
+			height: 21px;
+			background: url('../img/header/2.svg');
+		}
+
+		.header__btn:nth-child(6)::after {
+			content: '';
+			position: absolute;
+			z-index: 1000;
+			top: -11px;
+			right: -7px;
+			width: 21px;
+			height: 21px;
+			background: url('../img/header/4.svg');
+		}
+	}
+
+	.btn-call {
+		width: initial;
+		height: initial;
+		margin-right: 9px;
+		padding: 10px 28px;
+		border-radius: 39px;
+		line-height: 16px;
+		letter-spacing: 0.04em;
+		box-shadow: 0 3px 6px rgb(29 23 0 / 10%);
+		background: $background;
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 14px;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.header__minidesk {
+	display: none;
+
+	@include middle-desktop {
+		display: block;
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		.burger {
+			display: none;
+		}
+
+		@include tablet {
+			.header__container {
+				display: flex;
+			}
+
+			@include mobile {
+				.header__container {
+					display: initial;
+				}
+			}
+		}
+	}
+
+	@include tablet {
+		.burger {
+			display: block;
+			order: -1;
+
+			&:focus {
+				outline: none;
+			}
+
+			& svg path,
+			& svg rect {
+				transition: fill .3s ease;
+			}
+
+			&:hover svg path,
+			&:hover svg rect {
+				fill: $blue;
+			}
+		}
+	}
+
+	@include mobile {
+		.burger {
+			display: none;
+		}
+	}
+
+	.btn-call {
+		width: initial;
+		height: initial;
+		margin-right: 9px;
+		padding: 10px 28px;
+		border-radius: 39px;
+		line-height: 16px;
+		letter-spacing: 0.04em;
+		box-shadow: 0 3px 6px rgb(29 23 0 / 10%);
+		background: $background;
+		font-family: 'Raleway';
+		font-weight: 500;
+		font-size: 14px;
+		transition: color .3s ease;
+
+		@include mobile {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		&:hover {
+			color: $blue;
+		}
+	}
+
+}

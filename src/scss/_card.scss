@@ -1,0 +1,147 @@
+.card {
+	padding-top: 31px;
+	padding-left: 29px;
+	padding-right: 26px;
+	min-height: 547px;
+	height: 100%;
+
+	@include big-desktop {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-bottom: 20px;
+	}
+
+	&--booking {
+		.card-price-presence {
+			margin-bottom: 25px;
+
+
+			@include middle-desktop {
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&-img {
+		margin-bottom: 6px;
+	}
+
+	&-link {
+		display: block;
+		margin-bottom: 30px;
+		line-height: 22px;
+		text-align: center;
+		letter-spacing: 0.04em;
+		color: $blue;
+		font-weight: 500;
+		font-size: 18px;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $black;
+		}
+
+		&--booking {
+			margin-bottom: 8px;
+		}
+	}
+
+	&-list {
+		margin-bottom: 24px;
+		line-height: 16px;
+		font-weight: 350;
+		font-size: 14px;
+
+		&-item {
+			display: flex;
+			justify-content: space-between;
+
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+		}
+
+		&--booking {
+			margin-bottom: 30px;
+
+			@include middle-desktop {
+				margin-bottom: 1px;
+			}
+		}
+	}
+
+	&-price {
+		margin-bottom: 3px;
+
+		&-old {
+			line-height: 16px;
+			letter-spacing: 0.08em;
+			text-decoration-line: line-through;
+			text-transform: uppercase;
+			font-weight: 350;
+			font-size: 14px;
+		}
+
+		&-actual {
+			line-height: 25px;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 20px;
+			color: $blue;
+		}
+	}
+
+	&-presence {
+		padding-top: 7px;
+
+		&-text {
+			line-height: 16px;
+			font-weight: 350;
+			font-size: 14px;
+		}
+	}
+
+	&-buttonset {
+
+		display: flex;
+		justify-content: space-between;
+
+		@include middle-desktop {
+			display: block;
+			align-items: center;
+			text-align: center;
+		}
+
+		.btn--big {
+			width: initial;
+			height: initial;
+			margin-right: 9px;
+			padding: 10px 28px;
+			border-radius: 39px;
+			letter-spacing: 0.04em;
+			line-height: 21px;
+			font-weight: 350;
+			font-size: 18px;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $blue;
+			}
+
+			@include middle-desktop {
+				margin-right: 0px;
+				margin-bottom: 5px;
+				padding: 10px 18px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	&-price-presence {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 17px;
+	}
+}

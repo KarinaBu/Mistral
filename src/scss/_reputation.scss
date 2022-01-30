@@ -1,0 +1,153 @@
+.reputation {
+	padding-top: 106px;
+	padding-bottom: 50px;
+
+	@include mobile {
+		padding-top: 46px;
+	}
+
+	&__block-wrapper {
+		display: flex;
+
+		@include small-desktop {
+			flex-direction: column;
+		}
+	}
+
+	&__swiper-container {
+		position: relative;
+		max-width: 364px;
+
+		@include mobile {
+			max-width: initial;
+		}
+	}
+
+	&__swiper {
+		overflow: hidden;
+		margin-left: 64px;
+
+		@include mobile {
+			margin-left: 0px;
+		}
+	}
+
+	.swiper-wrapper {
+		display: -webkit-box;
+	}
+
+	.reputation-slide img {
+		@include mobile {
+			width: 100%;
+		}
+	}
+
+
+	&__block-left {
+		margin-right: 97px;
+
+		@include middle-desktop {
+			margin-right: 37px;
+		}
+
+		@include small-desktop {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+
+		&-open {
+			margin-bottom: 48px;
+		}
+	}
+
+	&__block-right {
+		width: 100%;
+
+		&-open {
+			margin-bottom: 38px;
+		}
+
+		&-list {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 41px;
+			row-gap: 24px;
+
+			@include middle-desktop {
+				display: none;
+			}
+		}
+
+		&-item {
+			max-width: 190px;
+			height: 235px;
+			width: 100%;
+			background: $background;
+		}
+	}
+}
+
+.reputation-button-prev,
+.reputation-button-next {
+	top: 50%;
+	box-shadow: 0px 3px 6px rgba(29, 23, 0, 0.1);
+	transition: background-color .3s ease;
+
+	&:hover {
+		background-color: blue;
+	}
+
+	@include mobile {
+		top: -20px;
+	}
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+	right: -1px;
+
+	@include big-desktop {
+		right: 0px;
+	}
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+	left: 0px;
+}
+
+.reputation__block-right-slider {
+	display: none;
+
+	@include middle-desktop {
+		display: block;
+		overflow: hidden;
+		max-width: 500px;
+
+		.swiper-wrapper {
+			overflow: visible;
+			display: -webkit-box;
+		}
+
+		.reputation__block-right-item {
+			max-width: initial;
+		}
+
+		.sertificate-slide {
+			height: 487px;
+			width: 200px;
+		}
+
+		@include desktop {
+			max-width: 350px;
+		}
+
+		@include mini-desktop {
+			max-width: 290px;
+		}
+
+		@include small-desktop {
+			max-width: initial;
+		}
+	}
+}
